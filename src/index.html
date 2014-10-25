@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="UTF-8">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
     <!-- compiled CSS -->
     <link rel="stylesheet" type="text/css" href="assets/<%= name %>-<%= version %>.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -20,12 +19,25 @@
 
     <!-- Main view
     ================================================== -->
-    <div id="contentWrapper" class="slide-container">
-      <div ng-view class="slide-animation"></div>
-    </div>
+    <!--<div id="contentWrapper" class="slide-container">-->
+      <!--<div ng-view class="slide-animation"></div>-->
+    <!--</div>-->
 
-    <div class="hide">
-    </div>
+    <slides>
+      <shape action="test|me"></shape>
+      <slide>
+
+        <section>
+          <h2>TOC</h2>
+          <ul>
+            <li>Test</li>
+            <li>me</li>
+          </ul>
+        </section>
+
+      </slide>
+      <shape action="#countdown 3"></shape>
+    </slides>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>

@@ -13,13 +13,16 @@ angular.module( 'webComponentsPresentation', [
   'shapeShifter',
   'director',
   'reveal',
+  'slides',
+  'slide',
+  'shape',
 
   'rt.debounce'
 ])
 
 .config( function myAppConfig ( routeProvider, $compileProvider ) {
-  routeProvider
-    .otherwise({ path: 'shapes/home' });
+//  routeProvider
+//    .otherwise({ path: 'shapes/home' });
 
   //Tools like Protractor and Batarang need this information to run, but you can disable this in production for a significant performance boost
   $compileProvider.debugInfoEnabled(false);

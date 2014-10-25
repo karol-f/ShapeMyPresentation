@@ -11,6 +11,7 @@ angular.module('director', [])
     });
 
     this.prev = debounce(300, function () {
+      console.log('director::prev');
       var index = globals.pages.indexOf(route.name);
       if (index > -1 && index > 0) {
         route.path(globals.pages[index - 1]);
