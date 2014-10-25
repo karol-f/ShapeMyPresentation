@@ -1,0 +1,52 @@
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <h3>Shadow DOM</h3>
+      <img width="950" height="336" src="assets/images/shadow_dom.png">
+    </section>
+
+    <section>
+      <h3>Shadow DOM</h3>
+      <br />
+      <div class="grid grid-pad">
+        <div class="col-3-12">
+          <img width="149" height="100" src="assets/images/wc-logo.png">
+        </div>
+        <div class="col-1-12">&nbsp;</div>
+        <div class="col-8-12">
+          <pre><code class="javascript hljs">
+            <span class="hljs-keyword">var</span> shadow = el.createShadowRoot();
+            shadow.innerHTML = <span class="hljs-string">"&lt;p&gt;My content&lt;/p&gt;"</span>;
+          </code></pre>
+        </div>
+      </div>
+      <div class="grid grid-pad">
+        <div class="col-3-12">
+          <img width="145" height="100" src="assets/images/polymer-small.png">
+        </div>
+        <div class="col-1-12">&nbsp;</div>
+        <div class="col-8-12">
+          <pre><code class="xml hljs">
+            <span class="hljs-tag">&lt;<span class="hljs-title">polymer-element</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"my-element"</span> <span class="hljs-attribute">noscript</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+                ...
+              <span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">polymer-element</span>&gt;</span>
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Shadow DOM</h3>
+      <ul>
+        <li>enkapsulacja DOM i CSS</li>
+        <li>modularność</li>
+        <li>elastyczność - &lt;content&gt;&lt;/content&gt;</li>
+        <li>znów można korzystać z ID</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
